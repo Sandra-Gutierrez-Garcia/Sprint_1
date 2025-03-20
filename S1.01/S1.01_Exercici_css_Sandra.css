@@ -1,0 +1,346 @@
+*{
+   
+    font-size: 30px;
+    text-align: left;
+   
+
+
+
+    
+   
+
+  
+}
+
+@media only screen and (max-width: 1024px ) {
+    .Header{
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    .Header nav{
+        margin: 2% ;
+        flex-grow: 1;
+        
+    }
+    .blook_Two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+
+    }
+    .BlueGrey{
+       width: 92%;
+    }
+    .BlueGrey .nevagation{
+        margin-top: 0.1px;
+        margin-bottom: 20px;
+       
+        width: 96%;
+    }
+    .BlueGrey  article{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 46.5%;
+    }
+    .BlueGrey .articlAbajo{
+        width: 46.5%;
+        margin-bottom: 5px;
+
+    
+
+    }
+    .blook_Two aside{
+        width: 92%;
+        margin-left:3%;
+      
+    }
+    aside .botton1{
+        width: 94.5%;
+        
+        margin-top: 20px;
+
+    }aside .botton2{
+        width: 94.5%;
+        margin-top: -15px;
+        margin-bottom:  20px; ;
+      
+       
+    }
+    
+}
+@media only screen and (max-width: 600px ) {
+    .Header{
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    .Header nav{
+        margin: 2% ;
+        flex-grow: 1;
+    }
+    .fondo_Yellow .Banner{
+        margin: -2% ;
+    }
+    .blook_Two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+
+    }
+    .BlueGrey{
+       width: 92%;
+       flex-direction: column;
+
+    }
+    .BlueGrey .nevagation{
+       
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 96%;
+    }
+    .BlueGrey  article{
+        margin-top: -30px;
+        width: 96%;
+        position: relative;
+        top: 40px;
+       
+       
+    }
+    .BlueGrey .articlAbajo{
+        width: 96%;
+        position: relative;
+        top: 15px;
+        margin-bottom: -5px;
+
+       
+
+    }
+
+    
+    .blook_Two aside{
+        width: 92%;
+        margin-left:3%;
+      
+    }
+    aside .botton1{
+        width: 94.5%;
+        
+        margin-top: 20px;
+
+    }aside .botton2{
+        width: 94.5%;
+        margin-top: -15px;
+        margin-bottom:  20px; ;
+      
+       
+    }
+
+
+
+.blook_one{
+background-color: black;
+padding: 1px;
+
+}
+
+.Header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    background-color: wheat;
+    margin: 3%;
+    padding: 5px;
+   
+    
+}
+}
+.blook_one{
+    background-color: black;
+    padding: 1px;
+    
+    }
+.Header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    background-color: wheat;
+    margin: 3%;
+    padding: 5px;
+    }
+    
+   
+        
+header{
+    background-color: red;
+    flex-grow: 1;
+ 
+    margin: 2% 2% 2% 2%;
+
+}nav{
+    background-color: aqua;
+    flex-grow: 4;
+  
+    margin: 2% 1% 2% 1%;
+
+}
+.Social{
+    background-color: olive;
+    flex-grow: 1;
+   
+    margin: 2% 2% 2% 2%;
+}
+.fondo_Yellow{
+    background-color: orange;
+    padding: 5%;
+    margin: 3%;
+}
+.Banner{
+   
+    background-color: yellow;
+    padding: 1%;
+    margin: -3%;
+    
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+    
+}
+.blook_Two{
+    background-color: black;
+    margin-top: 3%;
+    padding: 1px;
+    display: flex;
+   
+}
+.BlueGrey{
+    padding: 5px;
+    background-color: lightslategray;
+    margin: 3%;
+    flex-shrink: 0;
+    
+   
+    flex-grow: 3;
+    gap: 25px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+   
+   
+}
+article{
+
+    margin-top: 2%;
+    width: 45.6%;
+    height: 20% ;
+    background-color: aqua;
+
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+              
+      
+}
+.articlAbajo{
+    margin-top: -2%;
+    width: 45.6%;
+    height: 20% ;
+    background-color: aqua;
+
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+  
+   
+    
+}
+.nevagation{
+     /*Ajustar todo*/
+    margin-top: -2%;
+    width: 94.6%;
+    height: 20% ;
+    margin-bottom: 2%;
+    background-color: aqua;
+
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+}
+aside{
+
+    background-color: greenyellow;
+    padding: 5px;
+    margin: 3%;
+    margin-left: 1%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-direction: column;
+    flex-grow: 3;
+    gap: 25px;
+}
+
+.botton1{
+    
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 1px;
+    height: 20% ; 
+
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+    
+    /* Para ajustar la posicion*/
+    position: relative;
+    top: 8.5%;
+    
+}
+.botton2{
+    
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 1px;
+    height: 20% ; 
+
+    /* Para centrat el text*/
+    display: flex;
+    align-items: center;
+    
+    /* Para ajustar la posicion*/
+    position: relative;
+    top: 8.5%;
+    
+}
+.blook_three{
+
+    background-color: black;
+    padding: 1px;
+    margin-top:3%;
+
+}
+footer{
+    background-color: lightyellow;
+    margin: 3%;
+    padding: 1px;
+
+     /* Para ajustar la posicion*/
+    position: relative;
+    top: 8.5%;
+}
+ 
+
