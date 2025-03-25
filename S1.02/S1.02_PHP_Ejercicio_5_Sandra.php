@@ -8,25 +8,25 @@
 //Varaible 
 $notas=33;
 
-function notas ($notas){
+function clasificaciones (int $notas){
     if($notas>=60){
-        echo "Primera Division";
-    }else if($notas<=59 && $notas>=45){
-        echo "Segunda Divisiom";
-    }else if($notas<=44 && $notas>=33){
-         echo "Tercera Divisiom";
+        echo "Primera División";
+    }else if($notas>=45){
+        echo "Segunda División";
+    }else if($notas>=33){
+         echo "Tercera División";
     }else{
         echo "estudinat reprovara";
     }
 }
 
-notas(67);
+clasificaciones(67);
 echo "<br>";
-notas(45);
+clasificaciones(59);
 echo "<br>";
-notas(44);
+clasificaciones(44);
 echo "<br>";
-notas(5);
+clasificaciones(5);
 
 
 

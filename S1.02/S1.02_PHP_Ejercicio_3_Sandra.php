@@ -44,7 +44,7 @@ echo "<br><br> El doble de las variables X= " .( $x*=2) . " Y= " .  ($y*=2) . " 
 
 // Parte b crear una calculadora
 
-function Calculadora($numeroUno, $numeroDos, $operador){
+function calcular(float $numeroUno, float $numeroDos, string  $operador){
     switch($operador){
         case "+":
           echo "<br><br>El resultado es de la suma es  " . ($numeroUno + $numeroDos);
@@ -59,6 +59,9 @@ function Calculadora($numeroUno, $numeroDos, $operador){
         break;
         case "/":
             echo "<br>El resultado es de la divisio es " .  ($numeroDos / $numeroUno);
+        break;
+        default: 
+            echo "esa funcion no existe";
         break;
 
 
