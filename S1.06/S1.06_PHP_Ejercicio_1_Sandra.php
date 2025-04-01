@@ -1,6 +1,6 @@
 <?php
 session_start();
-include include "S1.06_PHP_Ejercicio_3_Sandra.php"
+
 ?>
 <!DOCTYPE html>
     <head>
@@ -9,7 +9,7 @@ include include "S1.06_PHP_Ejercicio_3_Sandra.php"
 </head>
 <body>
     <header>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+    <form action="S1.06_PHP_Ejercicio_1_Procesar.php" method="POST"> 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
 
@@ -22,16 +22,5 @@ include include "S1.06_PHP_Ejercicio_3_Sandra.php"
 </header>
 </body>
 </html>
-<?php
-
-echo "el nombre registrado es " . $_POST["nombre"] . " y el username " .  $_POST["username"];
 
 
- $_SESSION["nombre"]= "Lucas";
- $_SESSION["username"]= "maria";
-
-
-
-
-    
-?>

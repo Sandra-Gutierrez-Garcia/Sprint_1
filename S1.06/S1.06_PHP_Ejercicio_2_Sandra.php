@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <!DOCTYPE html>
     <head>
@@ -8,7 +9,7 @@ session_start();
 </head>
 <body>
     <header>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+    <form action="S1.06_PHP_Ejercicio_2_Procesar.php" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
 
@@ -21,17 +22,5 @@ session_start();
 </header>
 </body>
 </html>
-<?php
-
-echo "el nombre registrado es " . $_POST["nombre"] . " y el username " .  $_POST["username"];
 
 
- $_SESSION["nombre"]= "Lucas";
- $_SESSION["username"]= "maria";
-
-
- echo "<br> Numero de la linea actual del archivo es " . __line__;
- echo "<br> El archivo se encuentra en la ruta " .__DIR__;
- 
-    
-?>
