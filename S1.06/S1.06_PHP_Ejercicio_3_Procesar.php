@@ -1,8 +1,12 @@
 <?php
-session_start();
+declare(strict_types=1); 
+
 include "S1.06_PHP_Ejercicio_3_Metodos.php";
 
- $usuario= new Informacion($_POST["nombre"],$_POST["username"]);
+$nombre = (string) $_POST["nombre"];
+$username = (string) $_POST["username"];
+
+ $usuario= new Informacion( $nombre,  $username);
  echo $usuario->__toString();
 
  echo "<br> Numero de la linea actual del archivo es " . __line__;
