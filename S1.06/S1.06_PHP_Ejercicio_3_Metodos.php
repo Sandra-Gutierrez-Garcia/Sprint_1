@@ -11,9 +11,9 @@ class Informacion{
         }
 
         public function __toString(): string{
-            return "el nombre registrado es " . $this-> nombre . " y el username " . $this-> username;
-
+            return "Información del usuario:\nNombre: " . $this->nombre . "\nUsername: " . $this->username;
         }
 }
+
 
 ?>

@@ -1,23 +1,15 @@
 <?php
-session_start();
+declare(strict_types=1); 
+
+include "S1.06_PHP_Ejercicio_3_Metodos.php";
+
+$nombre = (string) $_POST["nombre"]="Lucas";
+$username = (string) $_POST["username"]="Pokemon";
+
+ $usuario= new Informacion( $nombre,  $username);
+ echo $usuario;
+
+ echo "<br> Numero de la linea actual del archivo es " . __line__;
+ echo "<br> El archivo se encuentra en la ruta " .__DIR__;
+ 
 ?>
-<!DOCTYPE html>
-    <head>
-    <meta charset="UTF-8">
-        <title>Ejercicio_1</title>
-</head>
-<body>
-    <header>
-    <form action="S1.06_PHP_Ejercicio_3_Procesar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
-
-        <label for="username">username:</label>
-        <input type="text" id="username" name="username" required>
-
-        <input type="submit" value="Enviar">
-
-</form>
-</header>
-</body>
-</html>

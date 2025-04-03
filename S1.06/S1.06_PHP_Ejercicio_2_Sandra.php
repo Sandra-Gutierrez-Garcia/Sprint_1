@@ -1,26 +1,19 @@
 <?php
 session_start();
 
+
+
+$_POST["nombre"]="Carlos";
+$_POST["username"]="POkemon";
+$_SESSION["nombre"]= "Lucas";
+$_SESSION["username"]= "maria";
+
+ echo "el nombre registrado es " . $_POST["nombre"] . " y el username " .  $_POST["username"];
+ echo  "<br> imprimir informacion de session: " . $_SESSION["nombre"] ." el username " .  $_SESSION["username"];
+
+ echo "<br> Numero de la linea actual del archivo es " . __line__;
+ echo "<br> El archivo se encuentra en la ruta " .__DIR__;
+ 
+
+    
 ?>
-<!DOCTYPE html>
-    <head>
-    <meta charset="UTF-8">
-        <title>Ejercicio_1</title>
-</head>
-<body>
-    <header>
-    <form action="S1.06_PHP_Ejercicio_2_Procesar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
-
-        <label for="username">username:</label>
-        <input type="text" id="username" name="username" required>
-
-        <input type="submit" value="Enviar">
-
-</form>
-</header>
-</body>
-</html>
-
-
