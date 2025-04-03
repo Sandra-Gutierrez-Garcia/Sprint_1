@@ -16,12 +16,12 @@ abstract class animal{
       $this->nombreDelAnimal = $nombreDelAnimal;
      
   }
-  public  function get_animal() {
+  public  function get_nombreDelAnimal() {
       return $this->nombreDelAnimal;
   }
   
  //seter para modificar
-    public function set_animal(String $nombreDelAnimal) {
+    public function set_nombreDelAnimal(String $nombreDelAnimal) {
     $this->nombreDelAnimal = $nombreDelAnimal;
     }
     //creamos estracto para las Herencia pueda accerder a ellas
