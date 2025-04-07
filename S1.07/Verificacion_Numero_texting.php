@@ -15,6 +15,16 @@ class Verificacion_Numero_texting  extends TestCase  {
         $this->assertTrue($numberChecker->isPositive());
 
     }
+	public function testis_Negative(){
+		$numberChecker = new NumberChecker(-2); 
+		$this->assertFalse($numberChecker->isPositive());
+
+	}
+	public function test_IsEven(){
+		$numberChecker = new NumberChecker(4); 
+		$this->assertTrue($numberChecker->isEven());
+
+	}
 
 }
 
