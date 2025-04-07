@@ -1,7 +1,7 @@
 <?php
 
 
-class S1_07_PHP_Ejercicio_1_Sandra   {
+class Verificacion_Numero   {
 
 
 	public function __construct(private int $number){}
@@ -11,6 +11,12 @@ class S1_07_PHP_Ejercicio_1_Sandra   {
 	}
 	public function isPositive(): bool {
 		return $this->number > 0;
+	}
+	public function isNegative():bool {
+		return $this->number < 0;
+	}
+	public function comparar():bool {
+		return $this->number == 4;
 	}
 
 }

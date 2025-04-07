@@ -3,7 +3,7 @@
 <?php
 
 
-class S1_07_PHP_Ejercicio_2_Sandra{
+class Notas_Verificadas{
 
     public function __construct(private int $notas){}
 
