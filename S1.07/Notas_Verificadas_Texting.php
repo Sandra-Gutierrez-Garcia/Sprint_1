@@ -10,7 +10,7 @@ class Notas_Verificadas_Texting  extends TestCase  {
 
     public function   testPrimeraDivision(){
         
-        $notas= new Notas_Verificadas (59);
+        $notas= new Notas_Verificadas (70);
     
         $this->assertEquals ("Primera División", $notas->clasificaciones());
         
@@ -27,14 +27,13 @@ class Notas_Verificadas_Texting  extends TestCase  {
    
         $notas= new Notas_Verificadas (33);
 
-        $this->assertStringContainsString("Tercera", $notas->clasificaciones());
+        $this->assertSame ("Tercera División", $notas->clasificaciones());
         
        
     }
-    public function  testReprovara(){
+    public function  testReprobado(){
         $notas= new Notas_Verificadas (1);
-        
-        $this->assertStringContainsString ("reprobado",$notas->clasificaciones());
+        $this->assertSame( "estudiante reprobado", $notas->clasificaciones());
         
        
     }
