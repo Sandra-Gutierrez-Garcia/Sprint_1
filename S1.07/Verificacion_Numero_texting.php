@@ -15,14 +15,7 @@ class Verificacion_Numero_texting  extends TestCase  {
         $this->assertTrue($numberChecker->isPositive());
 
     }
-	public function test_isNegative()
-    {
-        $number = new NumberChecker(2);
-		 $this->assertFalse($number->isNegative());
 
-
-
-    }
 }
 
 ?>

@@ -12,9 +12,7 @@ class numberchecker   {
 	public function isPositive(): bool {
 		return $this->number > 0;
 	}
-	public function isNegative():bool {
-		return $this->number < 0;
-	}
+
 	
 }
 
