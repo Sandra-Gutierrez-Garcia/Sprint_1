@@ -3,29 +3,26 @@
  declare(strict_types=1);
  use PHPUnit\Framework\TestCase;
 
- require_once "Verificacion_Numero.php";
+ require_once "numberchecker.php";
 
 class Verificacion_Numero_texting  extends TestCase  {
 
-	public function testIsEven(): void {
-        $number = new Verificacion_Numero(4);
-		 $this->assertTrue($number->isEven());
-	}
+	public function test_isPositive()
+    {
+        $numberChecker = new NumberChecker(2); 
 
-	public function testIsPositive(): void {
-        $number = new Verificacion_Numero(2);
-		 $this->assertTrue($number->isPositive()); 
+        $this->assertTrue($numberChecker->isEven());
+        $this->assertTrue($numberChecker->isPositive());
 
-	}
-	public function testisNegative():void {
-		$number = new Verificacion_Numero(2);
+    }
+	public function test_isNegative()
+    {
+        $number = new NumberChecker(2);
 		 $this->assertFalse($number->isNegative());
-	}
-	public function testcomparar():void {
-		$number = new Verificacion_Numero(2);
-		$this->assertEquals($number,$number->comparar());
-	}
 
+
+
+    }
 }
 
 ?>

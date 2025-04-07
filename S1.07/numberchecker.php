@@ -1,7 +1,7 @@
 <?php
 
 
-class Verificacion_Numero   {
+class numberchecker   {
 
 
 	public function __construct(private int $number){}
@@ -15,10 +15,7 @@ class Verificacion_Numero   {
 	public function isNegative():bool {
 		return $this->number < 0;
 	}
-	public function comparar():bool {
-		return $this->number == 4;
-	}
-
+	
 }
 
 ?>
